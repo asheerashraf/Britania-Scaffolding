@@ -1,0 +1,39 @@
+.container{
+    background-color: #243F89;
+    text-align: center;
+    margin-top: var(--marginTop, 0px); 
+    margin-bottom: var(--marginBottom, 0px); 
+}
+
+.title{
+    color: white;
+    font-size: 22px;
+}
+
+.quoteButton{
+    font-weight: bold;
+    width:75%;
+    background-color: #298ACB;
+    border-color: #298ACB;
+}
+
+.quoteButton:hover {
+    text-decoration: underline;
+    background-color: #226ea0;
+    border-color: #226ea0;
+  }
+
+/* .quoteButton:hover{
+background-color: blueviolet;
+} */
+
+@media only screen and (max-width: 768px){
+    .title{
+        font-size: 16px;
+    }
+    
+    .quoteButton{
+        margin-top: 25px;
+        font-weight: normal;
+    }
+}
