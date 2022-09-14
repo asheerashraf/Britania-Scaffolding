@@ -34,6 +34,7 @@ export default class RequestQuoteSection extends NavigationMixin (LightningEleme
         css.setProperty('--marginBottom', this.marginBottom);
     }
 
+    //opens PDF file (product catalog) when user clicks button
     handleClick(){
         this[NavigationMixin.Navigate]({
             type: 'standard__webPage',
@@ -43,6 +44,7 @@ export default class RequestQuoteSection extends NavigationMixin (LightningEleme
         }, false );
     }
 
+    //Determines which button to display (request quote or display product catalog)
     buttonHandler(){
         console.log(this.catalogTrue)
         if(this.catalogTrue){
